@@ -14,17 +14,20 @@ describe('ContainerController', function() {
 
   describe("updatePreview()", function() {
     describe("without a preview", function() {
-      xit("should not throw an exception", function() {
+      it("should not throw an exception", function() {
+        expect ($scope = {});
       });
     });
 
     describe("without an editor", function() {
       xit("should not throw an exception", function() {
+        expect element = $('div > div#passions-editor');
       });
     });
 
     describe("with a preview and editor defined", function() {
-      xit("should update the contents of the preview", function() {
+      it("should update the contents of the preview", function() {
+        expect(updatePreviewSpy).toHaveBeenCalled();
       });
     });
   });
@@ -32,16 +35,19 @@ describe('ContainerController', function() {
   describe("updateEditor()", function() {
     describe("without a preview", function() {
       xit("should not throw an exception", function() {
+        expect ($scope = {});
       });
     });
 
     describe("without an editor", function() {
-      xit("should not throw an exception", function() {
+      it("should not throw an exception", function() {
+        expect element = $('div > div#passions-editor');
       });
     });
 
     describe("with a preview and editor defined", function() {
-      xit("should update the contents of the editor", function() {
+      it("should update the contents of the editor", function() {
+        expect(updateEditorSpy).toHaveBeenCalled();
       });
     });
   });
